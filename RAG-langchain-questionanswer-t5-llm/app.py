@@ -34,7 +34,8 @@ def question_answering():
     # Get the question from the request
     question = request.json.get('question')
     logger.info(f'Question sent In :: {question}')
-    
+
+    TEXT_EMBEDDING_MODEL_ENDPOINT_NAME = jumpstart-dft-hf-textembedding-gpt-20231228-112955-chatbot //upadated 28-12-2023
     TEXT_EMBEDDING_MODEL_ENDPOINT_NAME = os.environ.get('TEXT_EMBEDDING_MODEL_ENDPOINT_NAME')
     # T5FLAN_XL_ENDPOINT_NAME = "jumpstart-example-huggingface-text2text-2023-08-05-07-33-26-290"
     T5FLAN_XXL_ENDPOINT_NAME = "jumpstart-dft-hf-text2text-flan-t5-20231228-113258" //upadated 28-12-2023
