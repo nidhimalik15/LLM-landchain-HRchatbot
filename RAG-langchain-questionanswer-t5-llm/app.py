@@ -37,7 +37,7 @@ def question_answering():
     
     TEXT_EMBEDDING_MODEL_ENDPOINT_NAME = os.environ.get('TEXT_EMBEDDING_MODEL_ENDPOINT_NAME')
     # T5FLAN_XL_ENDPOINT_NAME = "jumpstart-example-huggingface-text2text-2023-08-05-07-33-26-290"
-    # T5FLAN_XXL_ENDPOINT_NAME = "jumpstart-example-huggingface-text2text-2023-08-06-16-40-45-080" 
+    T5FLAN_XXL_ENDPOINT_NAME = "jumpstart-dft-hf-text2text-flan-t5-20231228-113258" //upadated 28-12-2023
     T5FLAN_XXL_ENDPOINT_NAME = os.environ.get('T5FLAN_XXL_ENDPOINT_NAME')
     
     
