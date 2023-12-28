@@ -5,27 +5,27 @@ Parameters:
   BucketName:
     Type: String
     Description: Name of the S3 bucket
-    Default: car-manuals-12345 # Replace with actual VPC ID
+    Default:  sagemaker-studio-266319754897-580gx7gmqlw # Replace with s3 bucket
   VpcId:
     Type: String
     Description: ID of the VPC
-    Default: vpc-123456  # Replace with actual VPC ID
+    Default: vpc-097ee149ad085b071  # Replace with actual VPC ID
   SubnetId:
     Type: String
     Description: ID of the subnet
-    Default: subnet-123456 , subnet-123456  # Replace with actual subnet IDs
+    Default: subnet-0bdb2a62db0a87786  # Replace with actual subnet IDs
   Imagename:
     Type: String
     Description: Name of the ECR repository
-    Default: 123456.dkr.ecr.us-east-1.amazonaws.com/save-embedding-vectordb:latest
+    Default: 266319754897.dkr.ecr.us-east-1.amazonaws.com/alphabot
   TextEmbeddingModelEndpointName:
     Type: String
     Description: Endpoint name of the Hugging Face embeddings model deployed on Sagemaker
-    Default: jumpstart-dft-hf-textembedding-gpt-j-6b-fp16
+    Default: jumpstart-dft-hf-textembedding-gpt-20231228-112955-chatbot
   VectorDatabaseEndpoint:
     Type: String
     Description: OpenSearch endpoint name which is the vector database
-    Default: abcdef
+    Default: newvector-database
   VectorDatabaseUsername:
     Type: String
     Description: OpenSearch master username
@@ -33,11 +33,11 @@ Parameters:
   VectorDatabasePassword:
     Type: String
     Description: OpenSearch password
-    Default: 12345abcd
+    Default: India@123
   VectorDatabaseIndex:
     Type: String
     Description: OpenSearch index
-    Default: carmanual
+    Default: AlphaHR
 
 
 Resources:
