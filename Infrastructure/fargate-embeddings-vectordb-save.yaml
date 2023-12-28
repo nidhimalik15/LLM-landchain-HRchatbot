@@ -5,7 +5,7 @@ Parameters:
   BucketName:
     Type: String
     Description: Name of the S3 bucket
-    Default:  sagemaker-studio-266319754897-580gx7gmqlw # Replace with s3 bucket
+    Default: sagemaker-studio-266319754897-580gx7gmqlw # Replace with s3 bucket
   VpcId:
     Type: String
     Description: ID of the VPC
