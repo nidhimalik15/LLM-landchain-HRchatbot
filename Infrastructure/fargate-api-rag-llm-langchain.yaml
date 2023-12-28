@@ -4,28 +4,28 @@
   Parameters:
     DemoVPC:
       Type: String
-      Default: vpc-123456  # Replace with actual VPC ID
+      Default: vpc-097ee149ad085b071  # Replace with actual VPC ID
       Description: The VPC that the service is running inside of
     PublicSubnetIds:
       Type: List<AWS::EC2::Subnet::Id>
-      Default: subnet-123456 , subnet-123456  # Replace with actual subnet IDs
+      Default: subnet-0bdb2a62db0a87786  # Replace with actual subnet IDs
       Description: List of public subnet IDs to put the load balancer and tasks in
     Imagename:
       Type: String
       Description: Name of the ECR repository
-      Default: 123456.dkr.ecr.us-east-1.amazonaws.com/qa-container:latest
+      Default: 266319754897.dkr.ecr.us-east-1.amazonaws.com/alphabot
     TextEmbeddingModelEndpointName:
       Type: String
       Description: Endpoint name of the Hugging Face embeddings model deployed on Sagemaker
-      Default: jumpstart-dft-hf-textembedding-gpt-j-6b-fp16
+      Default: jumpstart-dft-hf-textembedding-gpt-20231228-112955-chatbot
     T5FlanXXLEndpointName:
       Type: String
       Description: Endpoint name of the T5-FLAN endpoint deployed on sagemaker
-      Default: jumpstart-example-huggingface-text2text-2023-08-06-16-40-45-080
+      Default: jumpstart-dft-hf-text2text-flan-t5-20231228-113258
     VectorDatabaseEndpoint:
       Type: String
       Description: OpenSearch endpoint name which is the vector database
-      Default: abcdef
+      Default: newvector-database
     VectorDatabaseUsername:
       Type: String
       Description: OpenSearch master username
@@ -33,11 +33,11 @@
     VectorDatabasePassword:
       Type: String
       Description: OpenSearch password
-      Default: 12345abcd
+      Default: India@123
     VectorDatabaseIndex:
       Type: String
       Description: OpenSearch index
-      Default: carmanual
+      Default: AlphaHR
   
   Resources:
     LogGroup:
