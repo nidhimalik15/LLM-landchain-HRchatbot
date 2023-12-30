@@ -4,11 +4,11 @@
   Parameters:
     DemoVPC:
       Type: String
-      Default: vpc-123456  # Replace with actual VPC ID
+      Default: vpc-097ee149ad085b071  # Replace with actual VPC ID
       Description: The VPC that the service is running inside of
     PublicSubnetIds:
       Type: List<AWS::EC2::Subnet::Id>
-      Default: subnet-123456 , subnet-123456  # Replace with actual subnet IDs
+      Default: subnet-0bdb2a62db0a87786 , subnet-048c5422ef5377dc6  # Replace with actual subnet IDs
       Description: List of public subnet IDs to put the load balancer and tasks in
     Imagename:
       Type: String
