@@ -17,11 +17,11 @@
     TextEmbeddingModelEndpointName:
       Type: String
       Description: Endpoint name of the Hugging Face embeddings model deployed on Sagemaker
-      Default: jumpstart-dft-hf-textembedding-gpt-20231228-112955-chatbot
+      Default: jumpstart-dft-hf-textembedding-gpt-alphadatahrchatbot
     T5FlanXXLEndpointName:
       Type: String
       Description: Endpoint name of the T5-FLAN endpoint deployed on sagemaker
-      Default: jumpstart-dft-hf-text2text-flan-t5-20231228-113258
+      Default: jumpstart-dft-hf-text2text-flan-t5-alphadatahrchatbot
     VectorDatabaseEndpoint:
       Type: String
       Description: OpenSearch endpoint name which is the vector database
