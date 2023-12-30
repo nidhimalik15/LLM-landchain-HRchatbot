@@ -13,7 +13,7 @@ Parameters:
   SubnetId:
     Type: String
     Description: ID of the subnet
-    Default: subnet-0bdb2a62db0a87786  # Replace with actual subnet IDs
+    Default: subnet-0bdb2a62db0a87786 , subnet-048c5422ef5377dc6  # Replace with actual subnet IDs
   Imagename:
     Type: String
     Description: Name of the ECR repository
