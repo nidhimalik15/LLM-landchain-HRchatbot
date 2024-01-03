@@ -13,19 +13,19 @@
     Imagename:
       Type: String
       Description: Name of the ECR repository
-      Default: 266319754897.dkr.ecr.us-east-1.amazonaws.com/alphabot
+      Default: 266319754897.dkr.ecr.us-east-1.amazonaws.com/qa-container:latest
     TextEmbeddingModelEndpointName:
       Type: String
       Description: Endpoint name of the Hugging Face embeddings model deployed on Sagemaker
-      Default: jumpstart-dft-hf-textembedding-gpt-alphadatahrchatbot
+      Default: jumpstart-dft-hf-textembedding-gpt-alphahrchatbot
     T5FlanXXLEndpointName:
       Type: String
       Description: Endpoint name of the T5-FLAN endpoint deployed on sagemaker
-      Default: jumpstart-dft-hf-text2text-flan-t5-alphadatahrchatbot
+      Default: jumpstart-dft-hf-llm-falcon-40b-alphahr
     VectorDatabaseEndpoint:
       Type: String
       Description: OpenSearch endpoint name which is the vector database
-      Default: opensearch-vectordb
+      Default: https://search-opensearch-vectordb-hnfr2r4dcevglcmublfcjptz4i.us-east-1.es.amazonaws.com
     VectorDatabaseUsername:
       Type: String
       Description: OpenSearch master username
@@ -37,7 +37,7 @@
     VectorDatabaseIndex:
       Type: String
       Description: OpenSearch index
-      Default: AlphaHR
+      Default: alphahr
   
   Resources:
     LogGroup:
