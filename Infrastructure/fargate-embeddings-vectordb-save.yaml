@@ -5,7 +5,7 @@ Parameters:
   BucketName:
     Type: String
     Description: Name of the S3 bucket
-    Default: hr-alphadata-sagemaker-us-east-1 # Replace with s3 bucket
+    Default: cf-templates-1ngnir6upov83-us-east-1 # Replace with s3 bucket
   VpcId:
     Type: String
     Description: ID of the VPC
@@ -25,7 +25,7 @@ Parameters:
   VectorDatabaseEndpoint:
     Type: String
     Description: OpenSearch endpoint name which is the vector database
-    Default: newvector-database
+    Default: opensearch-vectordb
   VectorDatabaseUsername:
     Type: String
     Description: OpenSearch master username
