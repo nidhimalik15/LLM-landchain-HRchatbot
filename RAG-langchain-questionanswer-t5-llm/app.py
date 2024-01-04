@@ -9,7 +9,8 @@ from flask import Flask, request, jsonify
 from langchain.embeddings.sagemaker_endpoint import EmbeddingsContentHandler
 from langchain.llms.sagemaker_endpoint import LLMContentHandler, SagemakerEndpoint
 from langchain.chains.question_answering import load_qa_chain
-from langchain import PromptTemplate, LLMChain
+from langchain.prompts import PromptTemplate
+from langchain.chains import LLMChain
 from langchain.prompts.chat import (
     ChatPromptTemplate,
     SystemMessagePromptTemplate,
